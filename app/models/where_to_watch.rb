@@ -1,0 +1,2 @@
+class WhereToWatch < ApplicationRecord
+end
