@@ -1,0 +1,2 @@
+class MangaWhere < ApplicationRecord
+end
