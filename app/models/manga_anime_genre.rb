@@ -1,0 +1,2 @@
+class MangaAnimeGenre < ApplicationRecord
+end
