@@ -1,0 +1,2 @@
+class WhereToRead < ApplicationRecord
+end
