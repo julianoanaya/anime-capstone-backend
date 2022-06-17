@@ -1,0 +1,6 @@
+### Index
+GET http://localhost:3000/mangas.json
+
+
+### Show
+GET http://localhost:3000/mangas/2.json
