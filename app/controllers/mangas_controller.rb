@@ -7,5 +7,14 @@ class MangasController < ApplicationController
     manga = Manga.find(params["id"])
     render json: manga.as_json
   end
-  def 
+  def create
+    manga = Manga.new(
+      name: params[:name],
+      chapter: params[:chapter],
+      volume: params[:volume],
+      description: params[:description],
+    )
+    manga.save
+    render json: {message: "Manga created"}
+  end
 end

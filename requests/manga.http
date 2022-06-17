@@ -4,3 +4,15 @@ GET http://localhost:3000/mangas.json
 
 ### Show
 GET http://localhost:3000/mangas/2.json
+
+
+### Create
+POST http://localhost:3000/mangas.json
+Content-Type: application/json
+
+{
+  "name": "Bleach",
+  "chapter": 686,
+  "volume": 74,
+  "description": "It follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his parents' destiny after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki."
+}
