@@ -26,4 +26,8 @@ Rails.application.routes.draw do
   post "/where_to_reads" => "where_to_reads#create"
   patch "where_to_reads/:id" => "where_to_reads#update"
   delete "/where_to_reads/:id" => "where_to_reads#destroy"
+
+  get "manga_wheres" => "manga_wheres#index"
+  post "manga_wheres" => "manga_wheres#create"
+  delete "manga_wheres" => "manga_wheres#destroy"
 end
