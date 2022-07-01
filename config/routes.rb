@@ -40,4 +40,10 @@ Rails.application.routes.draw do
   post "/images" => "images#create"
   patch "/images/:id" => "images#update"
   delete "/images/:id" => "images#destroy"
+
+  get "/genres" => "genres#index"
+  get "/genres/:id" => "genres#show"
+  post "/genres" => "genres#create"
+  patch "/genres/:id" => "genres#update"
+  delete "/genres/:id" => "genres#destroy"
 end
