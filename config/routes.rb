@@ -30,4 +30,8 @@ Rails.application.routes.draw do
   get "manga_wheres" => "manga_wheres#index"
   post "manga_wheres" => "manga_wheres#create"
   delete "manga_wheres" => "manga_wheres#destroy"
+
+  get "anime_wheres" => "anime_wheres#index"
+  post "anime_wheres" => "anime_wheres#create"
+  delete "anime_wheres" => "anime_wheres#destroy"
 end
