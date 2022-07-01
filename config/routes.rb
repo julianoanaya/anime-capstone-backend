@@ -19,5 +19,11 @@ Rails.application.routes.draw do
   get "/where_to_watches/:id" => "where_to_watches#show"
   post "/where_to_watches" => "where_to_watches#create"
   patch "where_to_watches/:id" => "where_to_watches#update"
-  delete "/where_to_watches/:id" => "where_to_watches_#destroy"
+  delete "/where_to_watches/:id" => "where_to_watches#destroy"
+
+  get "/where_to_reads" => "where_to_reads#index"
+  get "/where_to_reads/:id" => "where_to_reads#show"
+  post "/where_to_reads" => "where_to_reads#create"
+  patch "where_to_reads/:id" => "where_to_reads#update"
+  delete "/where_to_reads/:id" => "where_to_reads#destroy"
 end
