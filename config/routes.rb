@@ -34,4 +34,10 @@ Rails.application.routes.draw do
   get "anime_wheres" => "anime_wheres#index"
   post "anime_wheres" => "anime_wheres#create"
   delete "anime_wheres" => "anime_wheres#destroy"
+
+  get "/images" => "images#index"
+  get "/images/:id" => "images#show"
+  post "/images" => "images#create"
+  patch "/images/:id" => "images#update"
+  delete "/images/:id" => "images#destroy"
 end
