@@ -6,4 +6,12 @@ Rails.application.routes.draw do
   get "/mangas" => "mangas#index"
   get "/mangas/:id" => "mangas#show"
   post "/mangas" => "mangas#create"
+  patch "/mangas/:id" => "mangas#update"
+  delete "/mangas/:id" => "mangas#destroy"
+
+  get "/animes" => "animes#index"
+  get "/animes/:id" => "animes#show"
+  post "/animes" => "animes#create"
+  patch "/animes/:id" => "animes#update"
+  delete "/animes/:id" => "animes#destroy"
 end

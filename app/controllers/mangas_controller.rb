@@ -1,10 +1,10 @@
 class MangasController < ApplicationController
   def index
-    mangas= Manga.all
+    mangas = Manga.all
     render json: mangas.as_json
   end
   def show
-    manga = Manga.find(params["id"])
+    manga = Manga.find_by(id: params[:id])
     render json: manga.as_json
   end
   def create
@@ -16,5 +16,19 @@ class MangasController < ApplicationController
     )
     manga.save
     render json: {message: "Manga created"}
+  end
+  def update
+    manga = Manga.find_by(id: params[:id])
+    manga.name = params[:name] || manga.name
+    manga.chapter = params[:chapter] || manga.chapter
+    manga.description = params[:description] || manga.description
+    manga.volume = params[:volume] || manga.volume
+    manga.save
+    render json: manga.as_json
+  end
+  def destroy
+    manga = Manga.find_by(id: params[:id])
+    manga.destroy
+    render json: {message: "Manga deleted"}
   end
 end

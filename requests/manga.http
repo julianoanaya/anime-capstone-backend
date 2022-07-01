@@ -11,8 +11,8 @@ POST http://localhost:3000/mangas.json
 Content-Type: application/json
 
 {
-  "name": "Bleach",
-  "chapter": 686,
-  "volume": 74,
-  "description": "It follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his parents' destiny after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki."
+  "name": "Detective Conan",
+  "chapter": 1096,
+  "volume": 101,
+  "description": "The story follows the adventures of Shinichi Kudo a young detective prodigy who was inadvertently shrunk into a child's body due to a poison he was force-fed by members of a criminal syndicate."
 }
