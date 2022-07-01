@@ -14,4 +14,10 @@ Rails.application.routes.draw do
   post "/animes" => "animes#create"
   patch "/animes/:id" => "animes#update"
   delete "/animes/:id" => "animes#destroy"
+
+  get "/where_to_watches" => "where_to_watches#index"
+  get "/where_to_watches/:id" => "where_to_watches#show"
+  post "/where_to_watches" => "where_to_watches#create"
+  patch "where_to_watches/:id" => "where_to_watches#update"
+  delete "/where_to_watches/:id" => "where_to_watches_#destroy"
 end

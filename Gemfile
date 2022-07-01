@@ -14,6 +14,7 @@ gem "puma", "~> 5.0"
 gem 'uri'
 gem 'net-http'
 gem 'openssl'
+gem "http"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
