@@ -16,4 +16,34 @@ Content-Type: application/json
   "volume": 101,
   "description": "The story follows the adventures of Shinichi Kudo a young detective prodigy who was inadvertently shrunk into a child's body due to a poison he was force-fed by members of a criminal syndicate."
 }
+### images create
 
+POST http://localhost:3000/images.json
+Content-Type: application/json
+
+{
+  "url": "detectiveConan.jpg",
+  "manga_id": 11
+
+}
+### where to reads cerate
+POST http://localhost:3000/manga_wheres.json
+Content-Type: application/json
+
+{
+  "where_to_read_id": 1,
+  "manga_id": 2,
+  "url_manga": "test.jpg"
+
+}
+
+
+### UPDATE action
+
+PATCH http://localhost:3000/images/1.json
+Content-Type: application/json
+
+{
+  "url": "https://i.pinimg.com/736x/5a/7e/be/5a7ebe0b0ba89c07e683f30fd0761f16.jpg",
+  "manga_id": 1
+}

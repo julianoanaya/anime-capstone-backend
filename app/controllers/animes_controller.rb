@@ -16,8 +16,10 @@ class AnimesController < ApplicationController
       episode: params[:episode],
       dub: params[:dub],
       image_url: params[:image_url],
-      description: params{:description}
+      description: params[:description]
     )
+    anime.save
+    render json: {message: "Anime created"}
   end
 
   def update

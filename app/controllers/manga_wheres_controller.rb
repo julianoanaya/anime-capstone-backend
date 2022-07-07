@@ -10,7 +10,7 @@ class MangaWheresController < ApplicationController
       url_manga: params["url_manga"],
     )
     manga_where.save
-    redner json: manga_where.as_json
+    render json: manga_where.as_json
   end
   def destroy
     manga_where = MangaWhere.find_by(id: params[:id])

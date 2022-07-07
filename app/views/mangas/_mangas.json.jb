@@ -1,0 +1,20 @@
+{
+  id: mangas.id,
+  chapter: mangas.chapter,
+  description: mangas.description,
+  volume: mangas.volume,
+  images: mangas.images,
+  where_to_reads: mangas.where_to_reads.map do |where_to_read|
+    {
+      id: where_to_read.id,
+      reading_service: where_to_read.reading_service,
+    }
+  end,
+  manga_anime_genres: mangas.manga_anime_genres.map do |manga_anime_genre|
+    {
+      id: manga_anime_genre.id,
+      genre_id: manga_anime_genre.genre,
+      manga_id: manga_anime_genre.manga_id,
+    }
+    end,
+}

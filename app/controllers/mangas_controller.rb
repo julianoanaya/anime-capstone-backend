@@ -1,7 +1,7 @@
 class MangasController < ApplicationController
   def index
-    mangas = Manga.all
-    render json: mangas.as_json
+    @mangas = Manga.all
+    render template: "mangas/index"
   end
   def show
     manga = Manga.find_by(id: params[:id])

@@ -10,7 +10,7 @@ class ImagesController < ApplicationController
   def create
     image = Image.new(
       url: params["url"],
-      manga_id: params[:manga_id],
+      manga_id: params["manga_id"],
     )
     image.save
     render json: image.as_json
@@ -20,7 +20,7 @@ class ImagesController < ApplicationController
     image.url = params["url"] || image.url
     image.manga_id = params["manga_id"] || image.manga_id
     image.save
-    redner json: image.as_json
+    render json: image.as_json
   end
   def destroy
     image = Image.find_by(id: params[:id])
