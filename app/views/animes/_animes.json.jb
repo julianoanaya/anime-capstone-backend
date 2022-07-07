@@ -1,0 +1,23 @@
+{
+  id: animes.id,
+  name: animes.name,
+  seasons: animes.seasons,
+  episode: animes.episode,
+  dub: animes.dub,
+  image_url: animes.image_url,
+  description: animes.description,
+  manga_id: animes.manga_id,
+  where_to_watchs: animes.where_to_watchs.map do |where_to_watch|
+    {
+      id: where_to_watch.id,
+      streaming_service: where_to_watch.streaming_service,
+    }
+    end,
+  manga_anime_genres: animes.manga_anime_genres.map do |manga_anime_genre|
+    {
+      id: manga_anime_genre.id,
+      genre_id: manga_anime_genre.genre,
+      anime_id: manga_anime_genre.anime_id,
+    }
+    end,
+}

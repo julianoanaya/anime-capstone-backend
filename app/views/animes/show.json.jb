@@ -1,0 +1,1 @@
+render "animes/animes", anime: @anime

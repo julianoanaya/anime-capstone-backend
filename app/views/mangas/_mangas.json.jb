@@ -1,5 +1,6 @@
 {
   id: mangas.id,
+  name: mangas.name,
   chapter: mangas.chapter,
   description: mangas.description,
   volume: mangas.volume,
