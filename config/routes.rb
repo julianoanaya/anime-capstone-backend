@@ -52,4 +52,8 @@ Rails.application.routes.draw do
   post "/manga_anime_genres" => "manga_anime_genres#create"
   patch "/manga_anime_genres/:id" => "manga_anime_genres#update"
   delete "/manga_anime_genres/:id" => "manga_anime_genres#destroy"
+
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+
 end
