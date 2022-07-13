@@ -16,7 +16,8 @@ class AnimesController < ApplicationController
       episode: params[:episode],
       dub: params[:dub],
       image_url: params[:image_url],
-      description: params[:description]
+      description: params[:description],
+      anime_url: params[:anime_url],
     )
     anime.save
     render json: {message: "Anime created"}
@@ -30,6 +31,7 @@ class AnimesController < ApplicationController
     anime.dub = params[:dub] || anime.dub
     anime.image_url = params[:image_url] || anime.image_url
     anime.description = params[:description] || anime.description
+    anime.anime_url = params[:anime_url] || anime.anime_url
 
     anime.save
     render json: anime.as_json

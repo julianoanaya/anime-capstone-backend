@@ -9,3 +9,12 @@ GET http://localhost:3000/animes/1.json
 ### create
 
 POST http://localhost:3000/animes.json
+
+
+### 
+PATCH http://localhost:3000/animes/1.json
+Content-Type: application/json
+
+{
+  "anime_url": "https://beta.crunchyroll.com/series/GRMG8ZQZR/one-piece"
+}
