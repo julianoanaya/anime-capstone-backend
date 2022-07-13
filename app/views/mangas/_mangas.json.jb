@@ -5,6 +5,7 @@
   description: mangas.description,
   volume: mangas.volume,
   image_url: mangas.image_url,
+  manga_url: mangas.manga_url,
   where_to_reads: mangas.where_to_reads.map do |where_to_read|
     {
       id: where_to_read.id,
