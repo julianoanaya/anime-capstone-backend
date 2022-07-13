@@ -1,0 +1,8 @@
+{
+  id: favorites.id,
+  user_id: favorites.user.id,
+  manga_id: favorites.manga_id,
+  anime_id: favorites.anime_id,
+  anime_details: favorites.anime,
+  manga_details: favorites.manga,
+}

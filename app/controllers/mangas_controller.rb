@@ -13,6 +13,7 @@ class MangasController < ApplicationController
       chapter: params[:chapter],
       volume: params[:volume],
       description: params[:description],
+      image_url: params[:image_url],
     )
     manga.save
     render json: {message: "Manga created"}
@@ -23,6 +24,7 @@ class MangasController < ApplicationController
     manga.chapter = params[:chapter] || manga.chapter
     manga.description = params[:description] || manga.description
     manga.volume = params[:volume] || manga.volume
+    manga.image_url = params[:image_url] || manga.image_url
     manga.save
     render json: manga.as_json
   end
